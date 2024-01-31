@@ -47,8 +47,8 @@ subBtn.addEventListener('click', (event) => {
         name: name.value.toLowerCase(),
         email: email.value,
         phNo: phNo.value,
-        gender: gender,
-        course: course,
+        "gender": gender,
+        "course": course,
     };
     // obj.course = course.value;
     // console.log(obj)
@@ -167,28 +167,13 @@ function displayItems(userInfo) {
 
 }
 
-
-
-// search.addEventListener('keyup', function(e){
-//     let userInp = srchInp.value.toLowerCase();
-//     // console.log(userInp)
-//     let fil = userInfo.filter((item)=>{
-//         if(userInp == item.name){
-//             console.log(userInp)
-//         }
-//         console.log(fil)
-
-//     })
-
-//     // userInfo.filter.name.toLowerCase()
-// })
-
 // Search Bar
 search.addEventListener('input', (event) => {
     console.log(event.target.value)
     let a = event.target.value.toLowerCase();
+    // let b = event.selectedGender.toLowerCase();
     let searchInfo = userInfo.filter((item) => {
-        if (item.name.includes(a) || item.phNo.includes(a) || item.email.includes(a)) {
+        if (item.name.includes(a) || item.phNo.includes(a) || item.email.includes(a)||item.gender.toLowerCase()== (a) || item.course.toLowerCase().includes(a)) {
             return true;
         }
     })

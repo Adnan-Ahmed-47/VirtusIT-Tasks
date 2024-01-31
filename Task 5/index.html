@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* display: flex   ; */
+        }
+        .body{
+            text-align: center;
+            margin: 10px auto;
+            border-radius: 20px;
+            background-color: bisque;
+            font-size: 1.3rem;
+            border: 1px solid;
+            /* margin: 10px; */
+            padding: 20px;
+            /* display: flex;
+            flex-direction: column; */
+            width: 40%;
+        }
+        table {
+            background-color: antiquewhite;
+            margin: 30px auto;
+            /* margin: 30px 50px; */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="body">
+        <h1>Tasks</h1>
+        <input placeholder="time" type="time"></input>
+        <input placeholder="desc" type="text"></input>
+        <button id="btn">ADD TODO</button>
+    </div>
+
+    <div class="table">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Timings</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
