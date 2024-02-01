@@ -7,7 +7,7 @@ let table = document.querySelector('tbody');
 let timeVal
 let descVal
 
-time.addEventListener('keyup', function(e){
+time.addEventListener('change', function(e){
     timeVal = e.target.value
     // console.log(timeVal)
 })
@@ -34,14 +34,16 @@ button.addEventListener('click', function(e){
 
     let stData = {timeVal, descVal}
     // console.log(stData)
+    
     arr.push(stData)
     console.log(arr)
-
     // let b = JSON.stringify(arr)
     // localStorage.setItem("data", b)
     localStorage.setItem("data",JSON.stringify(arr))
-
+    
     displayItems(arr)
+    stData = "";  //either this or form.reset() you can use
+    // form.reset();
 })
 
 function displayItems(arr1){
