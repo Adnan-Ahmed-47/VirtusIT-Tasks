@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+
     <!-- <p id="demo"></p> -->
-    <input type="date" name="" id="demo" readonly>
+    <!-- <h1 id="demo"></h1> -->
+
+    <!-- <h1>Local Time: </h1>
+    <h1 id="demo1"></h1> -->
+
+    <!-- -------------------------------------------------------- -->
+
+    <!-- <h1>Indian Time: </h1>
+    <input type="time" id="utc">
+    <button type="submit" class="sub">Convert to IST</button>
+    <input type="time" id="ist"> -->
+
+
+    <!-- -------------------------------------------------------- -->
+
+
+    <!-- <input type="date" name="" id="demo" readonly> -->
+
+    <!-- -------------------------------------------------------- -->
+
+    <!-- <h2> Convert Date to UTC in JavaScript. </h2>
+   <h4> Output, when we use toUTCString() method. </h4>
+   <div id = "result1"> </div>
+   <h4> Output when we use toISOString() method. </h4>
+   <div id = "result2"> </div> -->
+    <!-- -------------------------------------------------------- -->
 
     <!-- <label for="todayDate">Indian Time:
         <input type="date" name="" id="todayDate" readonly> 
@@ -17,13 +47,44 @@
 
 
     <!-- <input type="time" name="" id="time"> -->
-    
 
-    
+
+
+    <div class="body">
+
+        <div class="utcZone">
+
+            <h1>UTC Time</h1> <br>
+            <input type="text" id="utcTime"> <br><br>
+            <!-- <p id="utcTime"></p> -->
+
+            <button type="submit" class="sub">Convert</button> <br><br>
+        </div> <br>
+
+        <!-- <h2>Indian Time</h2>
+        <p id="localTime"></p><br> -->
+
+        <h2>Indian Time</h2>
+        <input type="time" id="localTime"> <br><br>
+
+        <h2>Saudi Time</h2>
+        <input type="time" id="saudiTime"> <br><br>
+
+        <h2>America Time</h2>
+        <input type="time" id="nyTime"> <br><br>
+
+        <h2>Japan Time</h2>
+        <input type="time" id="tokyoTime"> <br><br>
+    </div>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+
 </body>
 <script src="script.js"></script>
+<!-- <script src="moment.js"></script>
+<script src="moment-timezone-with-data.js"></script> -->
 
 </html>
