@@ -40,3 +40,12 @@ body{
     text-align: center;
     padding: 5px 10px;
 }
+
+/* input[name="time"]{
+    text-align: center;
+} */
+
+.tymZones input{
+    text-align: center;
+    padding: 5px 10px;
+}
