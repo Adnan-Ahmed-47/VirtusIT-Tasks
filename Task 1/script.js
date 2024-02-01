@@ -44,7 +44,9 @@ subBtn.addEventListener('click', (event)=>{
         check: checkd
     };
 
+    // obj = ""
     console.log(obj);
+    form.reset();
 
 
 })
