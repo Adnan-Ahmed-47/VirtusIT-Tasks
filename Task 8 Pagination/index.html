@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table table {
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+            background-color: brown;
+            color: white;
+            font-size: 30px;
+            /* filter: blur(5px); */
+        }
+
+        /* .blur{
+            filter: blur(5px);
+        } */
+
+        #btn {
+            margin-top: 20px;
+            margin-left: 800px;
+            padding: 20px 35px;
+            font-size: 30px;
+            font-weight: 600;
+            border-radius: 20px;
+            border: none;
+            background-color: sandybrown;
+        }
+
+        #popUp {
+            width: 500px;
+            height: 550px;
+            background-color: rgb(162, 225, 227);
+            color: black;
+            border-radius: 20px;
+            /* position: absolute; */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #popUp h3 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .details {
+            /* background-color: burlywood; */
+            height: 50%;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .details h4 {
+            font-size: 35px;
+        }
+
+
+        #close {
+            font-size: 35px;
+            font-weight: 600;
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            /* margin: 50px auto 0; */
+            margin: 25px auto;
+            position: absolute;
+            left: 50%;
+            bottom: 1%;
+            transform: translate(-70%, 20%);
+        }
+
+
+        .Details-container .close {
+            display: none;
+        }
+
+        #pagination{
+            height: 50px;
+            width: 100%;
+            /* background-color: aquamarine; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        .one, .two, .three{
+            height: 100%;
+            width: 50px;
+            text-align: center;
+            margin: 8px;
+        }
+        .btnNum{
+            height: 100%;
+            width: 100%;
+            font-size: 28px;
+            border: none;
+            background-color: gainsboro;
+        }
+        /* .btnNum:active{
+            background-color: blue;
+            color: white;
+        } */
+
+        /* .btnNum:hover {
+   background-color: red;
+} */
+    </style>
+</head>
+
+<body>
+    <button id="btn">Get Data</button>
+
+    <div id="table" class="blur">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="Details-container"></div>
+
+    <div id="pagination">
+        <div class="one">
+            <button class="btnNum" id="btnNum1">1</button>
+        </div>
+        <div class="two">
+            <button class="btnNum" id="btnNum2">2</button>
+        </div>
+        <div class="three">
+            <button class="btnNum" id="btnNum3">3</button>
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
