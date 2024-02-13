@@ -1,13 +1,8 @@
-// btn = document.getElementById('btn');
+btn = document.getElementById('btn');
 let table = document.querySelector('tbody');
 let detailsCont = document.querySelector('.Details-container');
 
-// window.onload = function(){
-            
-
-
 var z = btn.addEventListener('click', function () {
-    // function fetchInitialize(){
     fetch('https://dummyjson.com/users')
         .then((d1) => {
             return d1.json();
@@ -26,7 +21,7 @@ var z = btn.addEventListener('click', function () {
             //     return row
             // })
             // return user  
-           
+
             const pagTable = $('#employeeTable').DataTable({
                 data: users,
                 columns: [
@@ -36,22 +31,19 @@ var z = btn.addEventListener('click', function () {
                     { data: 'age' },
                 ],
                 paging: true, // Enable pagination
-                lengthMenu: [5, 10,25], // Define page length options
+                lengthMenu: [5, 10, 25], // Define page length options
                 pageLength: 10, // Set default page length
                 // displayStart: 0 // display the first page
             });
             table.page('first').draw('page');
             return pagTable;
         })
-            
-        .then((res1) => {         
-            table.innerHTML = res1.join('');
-        })
-    // }
-    // fetchInitialize();
 
+        .then((res1) => {
+            table.innerHTML = res1.join('');
+        });
 })
-// }
+
 
 function showPopup(id) {
     fetch(`https://dummyjson.com/user/${id}`)
@@ -102,7 +94,7 @@ function closePopUp() {
 //             let arr = [];
 //             for (let i = 0; i < 10; i++) {
 //                 console.log(users[i]);
-//                 var row = ` <tr onclick="showPopup(${users[i].id})">    
+//                 var row = ` <tr onclick="showPopup(${users[i].id})">
 //                         <td>${users[i].id}</td>
 //                         <td>${users[i].firstName}</td>
 //                         <td>${users[i].lastName}</td>
@@ -132,7 +124,7 @@ function closePopUp() {
 //             let arr = []
 //             for (let i = 10; i < 20; i++) {
 //                 console.log(users[i]);
-//                 var row = ` <tr onclick="showPopup(${users[i].id})">    
+//                 var row = ` <tr onclick="showPopup(${users[i].id})">
 //                         <td>${users[i].id}</td>
 //                         <td>${users[i].firstName}</td>
 //                         <td>${users[i].lastName}</td>
@@ -150,7 +142,7 @@ function closePopUp() {
 
 
 // pgbtn3.addEventListener('click', function () {
-//     btnCol3(); 
+//     btnCol3();
 //     fetch('https://dummyjson.com/users')
 //         .then((d3) => {
 //             return d3.json();
@@ -162,7 +154,7 @@ function closePopUp() {
 //             let arr = []
 //             for (let i = 20; i < 30; i++) {
 //                 console.log(users[i]);
-//                 var row = ` <tr onclick="showPopup(${users[i].id})">    
+//                 var row = ` <tr onclick="showPopup(${users[i].id})">
 //                         <td>${users[i].id}</td>
 //                         <td>${users[i].firstName}</td>
 //                         <td>${users[i].lastName}</td>
@@ -212,24 +204,6 @@ function closePopUp() {
 
 
 // -------------------------------------------------------------------
-
-// Fetch employee data using Fetch API
-// fetch('https://api.example.com/employees')
-//   .then(response => response.json())
-//   .then(data => {
-//     // Populate table rows with employee data
-//     const table = $('#employeeTable').DataTable({
-//       data: data,
-//       columns: [
-//         { data: 'name' },
-//         { data: 'age' },
-//         // Define more columns as needed
-//       ],
-//       paging: true, // Enable pagination
-//       lengthMenu: [5, 10, 25, 50], // Define page length options
-//       pageLength: 10 // Set default page length
-//     });
-//   });
 
 
 
