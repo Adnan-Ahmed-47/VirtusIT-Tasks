@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <!-- <style>
         #table table {
             width: 100%;
             margin-top: 30px;
@@ -15,10 +15,6 @@
             font-size: 30px;
             /* filter: blur(5px); */
         }
-
-        /* .blur{
-            filter: blur(5px);
-        } */
 
         #btn {
             margin-top: 20px;
@@ -105,22 +101,19 @@
             border: none;
             background-color: gainsboro;
         }
-        /* .btnNum:active{
-            background-color: blue;
-            color: white;
-        } */
+    </style> -->
+    <link rel="stylesheet" href="style.css">
 
-        /* .btnNum:hover {
-   background-color: red;
-} */
-    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 </head>
 
 <body>
     <button id="btn">Get Data</button>
 
     <div id="table" class="blur">
-        <table border="1">
+        <table id="employeeTable" border="1">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -136,7 +129,7 @@
     </div>
     <div class="Details-container"></div>
 
-    <div id="pagination">
+    <!-- <div id="pagination">
         <div class="one">
             <button class="btnNum" id="btnNum1">1</button>
         </div>
@@ -146,8 +139,7 @@
         <div class="three">
             <button class="btnNum" id="btnNum3">3</button>
         </div>
-    </div>
-
+    </div> -->
 
 </body>
 <script src="script.js"></script>
